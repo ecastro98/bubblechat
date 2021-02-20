@@ -2,7 +2,7 @@
     <info author="Sasuke*" type="script" name="Bubble chat" version="1.2.3" />
 	<oop>true</oop>
 
-	<script src="round.lua" type="client" />	
+	<script src="lib.lua" type="client" />
 	<script src="client.lua" type="client" />
 	<script src="server.lua" type="server" />
 

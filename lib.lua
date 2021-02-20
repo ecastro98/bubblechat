@@ -47,3 +47,26 @@ function dxCreateRoundedTexture(text_width,text_height,radius)
 	texture:setPixels(pix)
 	return texture
 end
+
+-- outElastic | Got from https://github.com/EmmanuelOga/easing/blob/master/lib/easing.lua
+local pi = math.pi
+function outElastic(t, b, c, d, a, p)
+  if t == 0 then return b end
+
+  t = t / d
+
+  if t == 1 then return b + c end
+
+  if not p then p = d * 0.3 end
+
+  local s
+
+  if not a or a < math.abs(c) then
+    a = c
+    s = p / 4
+  else
+    s = p / (2 * pi) * math.asin(c/a)
+  end
+
+  return a * math.pow(2, -10 * t) * math.sin((t * d - s) * (2 * pi) / p) + c + b
+end
