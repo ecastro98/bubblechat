@@ -1,5 +1,5 @@
 <meta>
-    <info author="Sasuke*" type="script" name="Bubble chat" version="1.2.3" />
+    <info author="Sasuke*" type="script" name="Bubble chat" version="1.2.4" />
 	<oop>true</oop>
 
 	<script src="lib.lua" type="client" />
